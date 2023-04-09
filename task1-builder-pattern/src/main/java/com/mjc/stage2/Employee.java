@@ -76,7 +76,7 @@ public class Employee {
         private String email;
         private String carNumber;
 
-        public EmployeeBuilder() {}
+        public EmployeeBuilder() { /* Empty constructor provided for builder pattern implementation */ }
 
         public EmployeeBuilder setName(String name) {
             this.name = name;
@@ -114,7 +114,7 @@ public class Employee {
     }
 
     private Employee(EmployeeBuilder employeeBuilder) {
-        this.name = employeeBuilder.carNumber;
+        this.name = employeeBuilder.name;
         this.lastName = employeeBuilder.lastName;
         this.position = employeeBuilder.position;
         this.phone = employeeBuilder.phone;

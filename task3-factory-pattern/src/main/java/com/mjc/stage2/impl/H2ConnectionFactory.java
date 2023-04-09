@@ -2,7 +2,6 @@ package com.mjc.stage2.impl;
 
 import com.mjc.stage2.ConnectionFactory;
 
-import java.io.FileInputStream;
 import java.io.IOException;
 import java.io.InputStream;
 import java.sql.Connection;
@@ -12,7 +11,6 @@ import java.util.Properties;
 
 public class H2ConnectionFactory implements ConnectionFactory {
     private static final String PROPERTIES_FILE = "h2database.properties";
-    private static final String JDBC_DRIVER_PROPERTY = "jdbc_driver";
     private static final String URL_PROPERTY = "db_url";
     private static final String USERNAME_PROPERTY = "user";
     private static final String PASSWORD_PROPERTY = "password";
